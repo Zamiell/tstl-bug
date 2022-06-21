@@ -1,0 +1,14 @@
+{
+  "name": "tstl-bug",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Zamiell/tstl-bug.git",
+  "author": "James <5511220+Zamiell@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@zamiell/tstl-module": "^1.0.2",
+    "lua-types": "^2.11.0",
+    "typescript": "^4.7.4",
+    "typescript-to-lua": "^1.6.0"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  // https://www.typescriptlang.org/docs/handbook/compiler-options.html
+  "compilerOptions": {
+    "outDir": "dist",
+
+    // Recommended as per TypeScriptToLua:
+    // https://typescripttolua.github.io/docs/getting-started/
+    "target": "ESNext",
+    "lib": ["ESNext"],
+    "moduleResolution": "Node",
+
+    // We use TypeScript definitions for the Lua standard library:
+    // https://github.com/TypeScriptToLua/lua-types
+    "types": ["lua-types/5.3"],
+  },
+
+  "include": ["./src/**/*.ts"],
+
+  // TypeScriptToLua settings
+  "tstl": {
+    "luaTarget": "5.3",
+    "luaBundle": "main.lua", // Will bundle all output Lua files into a single file.
+    "luaBundleEntry": "./src/main.ts",
+    "noHeader": true,
+  },
+}
